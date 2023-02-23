@@ -1,0 +1,24 @@
+{
+  "name": "{{name}}",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "build:test": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "lint": "eslint"
+  },
+  "repository": "",
+  "author": "{{author}}",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
+    "vite": "^4.1.1",
+    "vitepress": "^1.0.0-alpha.46",
+    "vitepress-plugin-search": "^1.0.4-alpha.19",
+    "vitepress-plugin-sidebar": "^0.0.7"
+  }
+}

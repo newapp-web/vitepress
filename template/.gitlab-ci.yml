@@ -1,0 +1,16 @@
+# Configuration for H5 project used by Continuous Delivery and Continuous Deployment.
+# Gitlab runner will triggered by three situation：develop branch、preview branch、tag in a master branch
+# gitlab 11.8
+include:
+    - project: "web/template/ci_cd_template"
+      ref: master
+      file: "/templates/11.8/normal-always.yml"
+variables:
+    DEPLOY_DIR: "./dist" # 需要部署的目录
+    AWS_DEFAULT_REGION: ap-southeast-1 # 桶所在区域
+    BUCKET_NAME: mps-gaia-web-prod-sg1 # 桶名
+    S3_PATH_PROD: "prod/gaia-docs" # TODO: 需要替换-S3路径正式环境 eg: active.wshareit.com/prod/xxxx
+    S3_PATH_TEST: "test/gaia-docs" # TODO: 需要替换-S3路径测试环境 eg: active.wshareit.com/test/xxxx
+    S3_PATH_PRE: "pre/gaia-docs" # TODO: 需要替换-S3路径测试环境 eg: active.wshareit.com/pre/xxxx
+    DISTRIBUTION_ID: "E2O5UJ3XO85LFI" # cloudfront cdn的域名 eg: 'E3T0IXFX8VIEV3'
+    DISTRIBUTION_PATH: "/*" # cloudfront TODO: 需要替换-刷新缓存的路径 eg: /xxxx/*
