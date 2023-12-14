@@ -7,9 +7,9 @@ const side = sideBar('docs', {
   collapsible: true,
 });
 export default {
-  title: '移动平台手册',
+  title: 'xxx手册',
   description:
-    '（Mobile PaaS，简称 mPaaS），以赋能研发效能和产品运营场景为核心目标，为业务提供一站式应用服务管理解决方案和基础运营解决方案。',
+    '',
   // srcDir: './docs',
   outDir: '../dist',
   cacheDir: '../.cache',

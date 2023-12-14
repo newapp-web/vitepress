@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: 移动平台
-  text: 高效的一站式移动开发平台。
-  tagline: Mobile PaaS，简称 mPaaS，以赋能研发效能和产品运营场景为核心目标，为业务提供一站式应用服务管理解决方案和基础运营解决方案。
+  name: xx平台
+  text: 高效的一站式xx开发平台。
+  tagline: 为业务提供一站式应用服务管理解决方案和基础运营解决方案。
   image:
-    src: https://portal-file.ushareit.org/f420fab37a4346f5b8a7a7a084f0bfbb
-    alt: Gaia-mPaaS
+    src:  #一个url
+    alt: 
   actions:
     - theme: brand
       text: Get Started
